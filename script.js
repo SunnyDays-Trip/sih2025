@@ -74,11 +74,7 @@
                 // Community Forum
                 "community-title": "Community Forum",
                 "community-text": "Connect with other farmers to share knowledge and solutions",
-                "rajesh-desc": "Wheat farmer from Punjab",
-                "rajesh-post": "Has anyone tried the new organic fertilizer for wheat? Results seem promising!",
-                "priya-desc": "Rice farmer from Haryana",
-                "priya-post": "Dealing with brown plant hopper in my rice field. Any effective organic solutions?",
-                "add-question-text": "Add Your Question",
+                "add-question-text": "Add your question",
                 
                 // Footer
                 "footer-text": "Mitti Sewa - Smart Crop Advisory System © 2023 | Developed for Government of Punjab",
@@ -200,10 +196,6 @@
                 // Community Forum
                 "community-title": "कम्युनिटी फोरम",
                 "community-text": "ज्ञान और solutions साझा करने के लिए अन्य किसानों से जुड़ें",
-                "rajesh-desc": "पंजाब से गेहूं किसान",
-                "rajesh-post": "क्या किसी ने गेहूं के लिए नए जैविक उर्वरक आज़माया है? परिणाम आशाजनक लगते हैं!",
-                "priya-desc": "हरियाणा से चावल किसान",
-                "priya-post": "मेरे चावल के खेत में भूरा प्लांट hopper से निपटना। कोई प्रभावी जैविक solutions?",
                 "add-question-text": "अपना प्रश्न जोड़ें",
                 
                 // Footer
@@ -326,10 +318,6 @@
                 // Community Forum
                 "community-title": "ਕਮਿਊਨਿਟੀ ਫੋਰਮ",
                 "community-text": "ਜਾਣਕਾਰੀ ਅਤੇ ਹੱਲ ਸਾਂਝੇ ਕਰਨ ਲਈ ਹੋਰ ਕਿਸਾਨਾਂ ਨਾਲ ਜੁੜੋ",
-                "rajesh-desc": "ਪੰਜਾਬ ਤੋਂ ਕਣਕ ਕਿਸਾਨ",
-                "rajesh-post": "ਕੀ ਕਿਸੇ ਨੇ ਕਣਕ ਲਈ ਨਵਾਂ ਜੈਵਿਤ ਖਾਦ ਅਜ਼ਮਾਇਆ ਹੈ? ਨਤੀਜੇ ਆਸ਼ਾਜਨਕ ਲੱਗ ਰਹੇ ਹਨ!",
-                "priya-desc": "ਹਰਿਆਣਾ ਤੋਂ ਚਾਵਲ ਕਿਸਾਨ",
-                "priya-post": "ਮੇਰੇ ਚਾਵਲ ਦੇ ਖੇਤ ਵਿੱਚ ਬ੍ਰਾਊਨ ਪਲਾਂਟ ਹੌਪਰ ਨਾਲ ਨਜਿੱਠਣਾ। ਕੋਈ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਜੈਵਿਕ ਹੱਲ?",
                 "add-question-text": "ਆਪਣਾ ਸਵਾਲ ਜੋੜੋ",
                 
                 // Footer
