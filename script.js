@@ -74,7 +74,7 @@
                 // Community Forum
                 "community-title": "Community Forum",
                 "community-text": "Connect with other farmers to share knowledge and solutions",
-                "add-question-text": "Add your question",
+                "add-question-text": "Give your feedback",
                 
                 // Footer
                 "footer-text": "Mitti Sewa - Smart Crop Advisory System © 2023 | Developed for Government of Punjab",
@@ -196,7 +196,7 @@
                 // Community Forum
                 "community-title": "कम्युनिटी फोरम",
                 "community-text": "ज्ञान और solutions साझा करने के लिए अन्य किसानों से जुड़ें",
-                "add-question-text": "अपना प्रश्न जोड़ें",
+                "add-question-text": "अपनी प्रतिक्रिया दें",
                 
                 // Footer
                 "footer-text": "मिट्टी सेवा - स्मार्ट फसल सलाह प्रणाली © 2023 | पंजाब सरकार के लिए विकसित",
@@ -318,7 +318,7 @@
                 // Community Forum
                 "community-title": "ਕਮਿਊਨਿਟੀ ਫੋਰਮ",
                 "community-text": "ਜਾਣਕਾਰੀ ਅਤੇ ਹੱਲ ਸਾਂਝੇ ਕਰਨ ਲਈ ਹੋਰ ਕਿਸਾਨਾਂ ਨਾਲ ਜੁੜੋ",
-                "add-question-text": "ਆਪਣਾ ਸਵਾਲ ਜੋੜੋ",
+                "add-question-text": "ਆਪਣਾ ਫੀਡਬੈਕ ਦਿਓ",
                 
                 // Footer
                 "footer-text": "ਮਿੱਟੀ ਸੇਵਾ - ਸਮਾਰਟ ਫਸਲ ਸलਾਹ ਸਿਸਟਮ © 2023 | ਪੰਜਾਬ ਸਰਕਾਰ ਲਈ ਵਿਕਸਿਤ",
