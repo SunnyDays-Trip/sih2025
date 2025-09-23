@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitti Sewa - Smart Crop Advisory System</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="offline-indicator" id="offline-indicator">
-        <i class="fas fa-wifi"></i> <span id="offline-text">You are currently offline. Some features may be limited.</span>
+        <i class="fas fa-wifi"></i> <span id="offline-text">You are currently offline. Some features may be
+            limited.</span>
     </div>
-    
+
     <div class="container">
         <header>
             <div class="logo">
@@ -21,9 +25,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" id="signin-btn"><i class="fas fa-user"></i> <span id="signin-text">Sign In</span></a></li>
-                    <li><a href="#" id="about-btn"><i class="fas fa-info-circle"></i> <span id="about-text">About</span></a></li>
-                    <li><a href="#"><i class="fas fa-download"></i> <span id="download-text">Download App</span></a></li>
+                    <li><a href="#" id="signin-btn"><i class="fas fa-user"></i> <span id="signin-text">Sign
+                                In</span></a></li>
+                    <li><a href="#" id="about-btn"><i class="fas fa-info-circle"></i> <span
+                                id="about-text">About</span></a></li>
+                    <li><a href="#"><i class="fas fa-download"></i> <span id="download-text">Download App</span></a>
+                    </li>
                     <li class="language-selector">
                         <i class="fas fa-globe"></i>
                         <select id="language-select">
@@ -36,38 +43,21 @@
                 </ul>
             </nav>
         </header>
-        
+
         <div class="dashboard">
             <div class="sidebar">
                 <div class="card weather-info">
-                    <h2><i class="fas fa-cloud-sun"></i> <span id="weather-title">Weather</span></h2>
-                    <div class="temperature" id="weather-temp">28°C</div>
-                    <div id="weather-desc">Partly Cloudy</div>
-                    <div class="weather-details">
-                        <div class="weather-detail">
-                            <i class="fas fa-wind"></i>
-                            <span id="weather-wind">15 km/h</span>
-                        </div>
-                        <div class="weather-detail">
-                            <i class="fas fa-tint"></i>
-                            <span id="weather-humidity">45%</span>
-                        </div>
-                        <div class="weather-detail">
-                            <i class="fas fa-compress-arrows-alt"></i>
-                            <span id="weather-pressure">1015 hPa</span>
-                        </div>
-                        <div class="weather-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span id="weather-location">Punjab</span>
-                        </div>
-                    </div>
-                    
-                    <div class="alert-banner">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <span id="weather-alert">Heavy rain expected in 5 days. Prepare drainage.</span>
-                    </div>
+                    <input   id="location-input" type="text" placeholder="Enter your Location" />
+                    <button  class="button-style"  id="search-btn"> Get Weather</button>
+
+                    <div class="weather-detail" id="weather-location"></div>
+                    <div id="weather-temp"></div>
+                    <div id="weather-wind"></div>
+                    <div id="weather-humidity"></div>
+                    <div id="weather-pressure"></div>
+                    <div id="weather-desc"></div>
+                    <div class="alert-banner" id="rain-alert"></div>
                 </div>
-                
                 <div class="card">
                     <h2><i class="fas fa-rupee-sign"></i> <span id="market-title">Market Prices</span></h2>
                     <div class="market-prices">
@@ -75,33 +65,37 @@
                             <span id="wheat-label">Wheat</span>
                             <div>
                                 <span>₹<span id="wheat-price">2,100</span>/qt</span>
-                                <span class="price-trend"><i class="fas fa-arrow-up"></i> <span id="wheat-trend">2.5%</span></span>
+                                <span class="price-trend"><i class="fas fa-arrow-up"></i> <span
+                                        id="wheat-trend">2.5%</span></span>
                             </div>
                         </div>
                         <div class="price-item">
                             <span id="rice-label">Rice</span>
                             <div>
                                 <span>₹<span id="rice-price">1,850</span>/qt</span>
-                                <span class="price-trend down"><i class="fas fa-arrow-down"></i> <span id="rice-trend">1.2%</span></span>
+                                <span class="price-trend down"><i class="fas fa-arrow-down"></i> <span
+                                        id="rice-trend">1.2%</span></span>
                             </div>
                         </div>
                         <div class="price-item">
                             <span id="cotton-label">Cotton</span>
                             <div>
                                 <span>₹<span id="cotton-price">6,500</span>/qt</span>
-                                <span class="price-trend"><i class="fas fa-arrow-up"></i> <span id="cotton-trend">4.1%</span></span>
+                                <span class="price-trend"><i class="fas fa-arrow-up"></i> <span
+                                        id="cotton-trend">4.1%</span></span>
                             </div>
                         </div>
                         <div class="price-item">
                             <span id="maize-label">Maize</span>
                             <div>
                                 <span>₹<span id="maize-price">1,700</span>/qt</span>
-                                <span class="price-trend down"><i class="fas fa-arrow-down"></i> <span id="maize-trend">0.8%</span></span>
+                                <span class="price-trend down"><i class="fas fa-arrow-down"></i> <span
+                                        id="maize-trend">0.8%</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <h2><i class="fas fa-tint"></i> <span id="irrigation-title">Irrigation Advisory</span></h2>
                     <div class="irrigation-alert">
@@ -112,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="soil-health-card">
                     <h2><i class="fas fa-seedling"></i> <span id="soil-title">Soil Health</span></h2>
                     <div class="soil-params">
@@ -134,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- New Unique Feature: Crop Rotation Advisor -->
                 <div class="crop-rotation-advisor">
                     <h2><i class="fas fa-exchange-alt"></i> <span id="rotation-title">Crop Rotation Advisor</span></h2>
@@ -156,13 +150,14 @@
                     </button>
                 </div>
             </div>
-            
+
             <div class="main-content">
                 <div class="card">
                     <h2><i class="fas fa-robot"></i> <span id="chat-title">Crop Advisory Chat</span></h2>
                     <div class="chat-container" id="chat-container">
                         <div class="message bot-message">
-                            <span id="welcome-message">Hello! I'm your crop advisory assistant. How can I help you today? You can ask about crops, pests, weather impact, or farming techniques.</span>
+                            <span id="welcome-message">Hello! I'm your crop advisory assistant. How can I help you
+                                today? You can ask about crops, pests, weather impact, or farming techniques.</span>
                             <div class="timestamp" id="welcome-timestamp">Just now</div>
                             <div class="suggestions">
                                 <button class="suggestion-btn">What to sow this season?</button>
@@ -178,10 +173,11 @@
                         <button class="send-btn" id="send-btn"><i class="fas fa-paper-plane"></i></button>
                     </div>
                 </div>
-                
+
                 <div class="features">
                     <div class="feature-card">
-                        <h2><i class="fas fa-calendar-alt"></i> <span id="fertilizer-title">Fertilizer Schedule</span></h2>
+                        <h2><i class="fas fa-calendar-alt"></i> <span id="fertilizer-title">Fertilizer Schedule</span>
+                        </h2>
                         <div class="crop-selector">
                             <select id="crop-select">
                                 <option value="wheat">Wheat</option>
@@ -208,7 +204,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="feature-card">
                         <h2><i class="fas fa-bug"></i> <span id="pest-title">Pest Identification</span></h2>
                         <div class="image-upload">
@@ -223,14 +219,16 @@
                         </div>
                         <div id="pest-preview"></div>
                         <div id="pest-result">
-                            <p id="pest-default-text">Upload an image to identify pests and get treatment suggestions.</p>
+                            <p id="pest-default-text">Upload an image to identify pests and get treatment suggestions.
+                            </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- New Unique Feature: Government Schemes -->
                 <div class="govt-schemes">
-                    <h2><i class="fas fa-file-invoice-dollar"></i> <span id="schemes-title">Government Schemes</span></h2>
+                    <h2><i class="fas fa-file-invoice-dollar"></i> <span id="schemes-title">Government Schemes</span>
+                    </h2>
                     <p id="schemes-text">Available schemes for Punjab farmers:</p>
                     <div class="scheme-item">
                         <div>
@@ -254,24 +252,25 @@
                         <span class="scheme-badge" id="active-badge3">Active</span>
                     </div>
                 </div>
-                
+
                 <div class="community-section">
                     <h2><i class="fas fa-users"></i> <span id="community-title">Community Forum</span></h2>
                     <p id="community-text">Connect with other farmers to share knowledge and solutions</p>
-                    
-                    <button class="upload-btn" style="margin-top: 15px;" onclick="window.location.href='community.html'">
+
+                    <button class="upload-btn" style="margin-top: 15px;"
+                        onclick="window.location.href='community.html'">
                         <i class="fas fa-plus"></i> <span id="add-question-text">Give your feedback</span>
                     </button>
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <p id="footer-text">Mitti Sewa - Smart Crop Advisory System © 2023 | Developed for Government of Punjab</p>
             <p id="footer-desc">This system provides AI-powered advice for small and marginal farmers</p>
         </footer>
     </div>
-    
+
     <!-- Sign In Modal -->
     <div class="modal" id="signin-modal">
         <div class="modal-content">
@@ -291,11 +290,12 @@
                 <button type="submit" class="submit-btn" id="signin-button">Sign In</button>
             </form>
             <p style="text-align: center; margin-top: 20px;">
-                <span id="no-account-text">Don't have an account?</span> <a href="#" style="color: #2e7d32;" id="register-link">Register here</a>
+                <span id="no-account-text">Don't have an account?</span> <a href="#" style="color: #2e7d32;"
+                    id="register-link">Register here</a>
             </p>
         </div>
     </div>
-    
+
     <!-- About Modal -->
     <div class="modal" id="about-modal">
         <div class="modal-content">
@@ -303,7 +303,8 @@
                 <h2 id="about-modal-title">About Mitti Sewa</h2>
                 <button class="close-btn">&times;</button>
             </div>
-            <p id="about-text1">Mitti Sewa is an AI-powered crop advisory system designed for small and marginal farmers in Punjab. Our system provides:</p>
+            <p id="about-text1">Mitti Sewa is an AI-powered crop advisory system designed for small and marginal farmers
+                in Punjab. Our system provides:</p>
             <ul style="margin: 15px 0 15px 20px;">
                 <li id="about-list1">Personalized crop advice</li>
                 <li id="about-list2">Weather forecasts and alerts</li>
@@ -316,9 +317,11 @@
                 <li id="about-list9">Crop rotation recommendations</li>
                 <li id="about-list10">Government scheme information</li>
             </ul>
-            <p id="about-text2">Our mission is to empower farmers with technology-driven solutions to improve yield, reduce costs, and increase profitability.</p>
+            <p id="about-text2">Our mission is to empower farmers with technology-driven solutions to improve yield,
+                reduce costs, and increase profitability.</p>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

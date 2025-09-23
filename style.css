@@ -132,14 +132,30 @@
         .weather-info {
             text-align: center;
         }
-
+        #location-input{
+            margin: 0px 10px;
+            padding: 12px 15px;
+            width: 200px;
+            border: 1px solid #2e7d32;
+            border-radius: 25px;
+            font-size: 13px;
+            
+        }
+        .button-style{
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 9px;
+            border-radius: 25px;
+            border: 1px solid #2e7d32;
+            font-size: 13px;
+        }
         .temperature {
             font-size: 2rem;
             font-weight: 600;
             margin: 10px 0;
         }
 
-        .weather-details {
+        /* .weather-details {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
@@ -156,7 +172,7 @@
             font-size: 1.5rem;
             color: var(--secondary);
             margin-bottom: 5px;
-        }
+        } */
 
         .alert-banner {
             background: var(--warning);
